@@ -1,0 +1,46 @@
+<script type="text/html" id="tpl-estabelecimento-selecionado">
+<div><strong>Nome: </strong> {nome}</div>
+<div><strong>Email: </strong> {email}</div>
+<div><strong>Telefone: </strong> {telefone}</div>
+<div><strong>Whatsapp: </strong> {whatsapp}</div>
+<div><strong>Categorias: </strong> {categorias}</div>
+<div><strong>Endereço: </strong> {end}</div>
+</script>
+<form id="formEstabelecimento">
+    <dl class="d-none">
+        <dt><label for="txt-estado">Localização</label></dt>
+        <dd>
+            <select name="txt-estado" id="txt-estado" class="form-control">
+                <option value="" selected="true">Selecione um estado</option>
+            </select>
+            <select name="txt-cidade" id="txt-cidade" class="form-control">
+                <option value="" selected="true">Selecione uma cidade</option>
+            </select>
+            <select name="txt-bairro" id="txt-bairro" class="form-control">
+                <option value="" selected="true">Selecione um bairro</option>
+            </select>
+        </dd>
+    </dl>
+    <dl class="d-none">
+        <dt><label for="txtEstabelecimentoCategoria">Categoria</label></dt>
+        <dd><input type="text" name="txtEstabelecimentoCategoria" id="txtEstabelecimentoCategoria"
+                class="form-control input-block" placeholder="mercado, açougue" /></dd>
+    </dl>
+    <dl>
+        <dt><label for="txt-estabelecimento">Estabelecimento</label></dt>
+        <dd>
+            <select name="txt-estabelecimento" id="txt-estabelecimento" class="form-control input-block" required>
+                <option value="">Selecione um estabelecimento</option>
+            </select></dd>
+    </dl>
+</form>
+
+<h3>Detalhes do estabelecimento selecionado</h3>
+<dl id="divDetalhes">
+    <div><strong>Nome: </strong></div>
+    <div><strong>Email: </strong></div>
+    <div><strong>Telefone: </strong></div>
+    <div><strong>Whatsapp:</strong></div>
+    <div><strong>Categorias: </strong></div>
+    <div><strong>Endereço: </strong></div>
+</dl>
